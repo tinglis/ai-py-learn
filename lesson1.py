@@ -1,3 +1,6 @@
+# The purpose of this program is to compare various classifiers availible in the scikit-learn module. THe comparison is preformed on a small hard coded data set.
+
+
 import numpy
 import matplotlib.pyplot as plt
 
