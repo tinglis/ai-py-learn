@@ -1,0 +1,11 @@
+{
+  "taxYear": 2024,
+  "brackets": [
+    { "limit": 54409.09, "rate": 0.15 },
+    { "limit": 59794.49, "rate": 0.205 },
+    { "limit": 173205, "rate": 0.26 },
+    { "limit": 246752, "rate": 0.29 },
+    { "limit": null, "rate": 0.33 }
+  ],
+  "basicPersonalAmount": 0
+}
