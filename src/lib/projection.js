@@ -338,11 +338,17 @@ export function runRetirementYear({
   const extraRrsp = Math.min(residualNeed, rrspBal - rrspWithdrawal);
   const totalRrspWithdrawal = rrspWithdrawal + extraRrsp;
   residualNeed = Math.max(0, residualNeed - extraRrsp);
+  const calculatedRdspWithdrawal =
+    rdspWithdrawal > 0 ? Math.min(rdspWithdrawal, rdspBalance) : 0;
+  residualNeed = Math.max(0, residualNeed - calculatedRdspWithdrawal);
+  const rdspTopUp = Math.min(residualNeed, rdspBalance - calculatedRdspWithdrawal);
+  const totalRdspWithdrawal = calculatedRdspWithdrawal + rdspTopUp;
+  residualNeed = Math.max(0, residualNeed - rdspTopUp);
 
   let rdspClawback = 0;
-  if (rdspWithdrawal > 0) {
+  if (totalRdspWithdrawal > 0) {
     rdspClawback = calculateRDSPClawback({
-      withdrawal: rdspWithdrawal,
+      withdrawal: totalRdspWithdrawal,
       grants: rdspGrantsInLast10Yrs,
       bonds: 0,
       totalAssistance: rdspGrantsInLast10Yrs,
@@ -362,9 +368,10 @@ export function runRetirementYear({
     rrspWithdrawal: roundToCents(totalRrspWithdrawal),
     nonRegWithdrawal: roundToCents(nonRegWithdrawal),
     tfsaWithdrawal: roundToCents(tfsaWithdrawal),
+    rdspWithdrawal: roundToCents(totalRdspWithdrawal),
     residualNeed: roundToCents(residualNeed),
     gis: roundToCents(gis),
-    rdspBalanceReduction: roundToCents(rdspWithdrawal + rdspClawback),
+    rdspBalanceReduction: roundToCents(totalRdspWithdrawal + rdspClawback),
     taxableIncome: roundToCents(taxableIncome),
     incomeForGISNextYear: roundToCents(incomeForGISNextYear),
   };
@@ -452,6 +459,7 @@ export function runFullProjection(options = {}) {
     let rrspWithdrawal = 0;
     let tfsaWithdrawal = 0;
     let nonRegWithdrawal = 0;
+    let rdspWithdrawal = 0;
     let yearProjection = null;
     let withdrawalPlan = null;
     let employerMatchAmount = 0;
@@ -499,6 +507,7 @@ export function runFullProjection(options = {}) {
         rrspWithdrawal = projection.rrsp.withdrawal;
         tfsaWithdrawal = projection.tfsa.withdrawal;
         nonRegWithdrawal = projection.nonReg.withdrawal;
+        rdspWithdrawal = projection.rdsp.withdrawal;
 
         tfsaBalance = projection.tfsa.balance;
         rrspBalance = projection.rrsp.balance;
@@ -572,6 +581,7 @@ export function runFullProjection(options = {}) {
         rrspWithdrawal = projection.rrsp.withdrawal;
         tfsaWithdrawal = projection.tfsa.withdrawal;
         nonRegWithdrawal = projection.nonReg.withdrawal;
+        rdspWithdrawal = projection.rdsp.withdrawal;
 
         tfsaBalance = projection.tfsa.balance;
         rrspBalance = projection.rrsp.balance;
@@ -617,6 +627,7 @@ export function runFullProjection(options = {}) {
       rrspWithdrawal = projection.rrsp.withdrawal;
       tfsaWithdrawal = projection.tfsa.withdrawal;
       nonRegWithdrawal = projection.nonReg.withdrawal;
+      rdspWithdrawal = projection.rdsp.withdrawal;
       tfsaBalance = projection.tfsa.balance;
       rrspBalance = projection.rrsp.balance;
       nonRegBalance = projection.nonReg.balance;
@@ -656,8 +667,9 @@ export function runFullProjection(options = {}) {
       rrspWithdrawal = withdrawalPlan.rrspWithdrawal;
       nonRegWithdrawal = withdrawalPlan.nonRegWithdrawal;
       tfsaWithdrawal = withdrawalPlan.tfsaWithdrawal;
+      rdspWithdrawal = withdrawalPlan.rdspWithdrawal;
       totalWithdrawal =
-        rrspWithdrawal + nonRegWithdrawal + tfsaWithdrawal;
+        rrspWithdrawal + nonRegWithdrawal + tfsaWithdrawal + rdspWithdrawal;
 
       const projection = runYearProjection({
         tfsa: tfsaBalance,
@@ -669,6 +681,7 @@ export function runFullProjection(options = {}) {
         tfsaWithdrawal,
         rrspWithdrawal,
         nonRegWithdrawal,
+        rdspWithdrawal,
         preRetRate: postRetRate,
         dividendYield,
         tfsaRoom,
@@ -690,6 +703,7 @@ export function runFullProjection(options = {}) {
       rrspWithdrawal = projection.rrsp.withdrawal;
       tfsaWithdrawal = projection.tfsa.withdrawal;
       nonRegWithdrawal = projection.nonReg.withdrawal;
+      rdspWithdrawal = projection.rdsp.withdrawal;
 
       tfsaBalance = projection.tfsa.balance;
       rrspBalance = projection.rrsp.balance;
@@ -722,6 +736,7 @@ export function runFullProjection(options = {}) {
       rrspWithdrawal: roundToCents(rrspWithdrawal),
       tfsaWithdrawal: roundToCents(tfsaWithdrawal),
       nonRegWithdrawal: roundToCents(nonRegWithdrawal),
+      rdspWithdrawal: roundToCents(rdspWithdrawal),
       employerMatch: roundToCents(employerMatchAmount),
       gis: roundToCents(gisAmount),
       tfsaBalance: roundToCents(tfsaBalance),

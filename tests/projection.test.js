@@ -93,6 +93,23 @@ test('Retirement withdrawals respect GIS threshold', () => {
   assert.ok(plan.tfsaWithdrawal > 0);
 });
 
+test('Retirement plan taps RDSP when other accounts depleted', () => {
+  const plan = runRetirementYear({
+    spending: 15000,
+    cpp: 0,
+    oas: 0,
+    gisThreshold: 0,
+    tfsaBal: 0,
+    rrspBal: 0,
+    nonRegBal: 0,
+    rdspBalance: 20000,
+    rdspGrantsInLast10Yrs: 5000,
+  });
+  assert.ok(plan.rdspWithdrawal > 0);
+  assert.equal(plan.residualNeed, 0);
+  assert.ok(plan.rdspBalanceReduction > plan.rdspWithdrawal);
+});
+
 test('Retirement GIS calculation uses prior-year income lag', () => {
   const suppressed = runRetirementYear({
     spending: 20000,
