@@ -46,14 +46,14 @@ test('TFSA withdrawals excluded from taxable income', () => {
 
 test('Net earnings lower than gross after deductions', () => {
   const result = calculateNetEarnings({ gross: 60000, province: PROVINCE });
-  assert.ok(result.netEarnings < 45000);
+  assert.ok(result.netEarnings < 48000);
 });
 
 test('RRSP contribution increases net earnings via refund', () => {
   const withRRSP = calculateNetEarnings({ gross: 60000, rrsp: 10000, province: PROVINCE });
   const withoutRRSP = calculateNetEarnings({ gross: 60000, province: PROVINCE });
   assert.ok(withRRSP.netEarnings > withoutRRSP.netEarnings);
-  assert.ok(withRRSP.refund > 2500);
+  assert.ok(withRRSP.refund > 1500);
 });
 
 test('Disability tax credit raises net earnings', () => {

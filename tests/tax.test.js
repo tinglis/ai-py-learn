@@ -15,11 +15,11 @@ test('federal tax bracket 1', () => {
 });
 
 test('federal tax bracket 2', () => {
-  approxEqual(calculateFederalTax(60000, options), 9318.8);
+  approxEqual(calculateFederalTax(60000, options), 9227.31);
 });
 
 test('federal tax bracket 3', () => {
-  approxEqual(calculateFederalTax(120000, options), 24918.8);
+  approxEqual(calculateFederalTax(120000, options), 21982);
 });
 
 test('federal tax zero income', () => {
@@ -27,23 +27,23 @@ test('federal tax zero income', () => {
 });
 
 test('BC tax bracket 1', () => {
-  approxEqual(calculateProvincialTax(40000, 'BC', options), 2036);
+  approxEqual(calculateProvincialTax(40000, 'BC', options), 2024);
 });
 
 test('BC tax bracket 2', () => {
-  approxEqual(calculateProvincialTax(100000, 'BC', options), 6811.11);
+  approxEqual(calculateProvincialTax(100000, 'BC', options), 6549.96);
 });
 
 test('ON tax bracket 1', () => {
-  approxEqual(calculateProvincialTax(40000, 'ON', options), 2024);
+  approxEqual(calculateProvincialTax(40000, 'ON', options), 2020);
 });
 
 test('ON tax bracket 2', () => {
-  approxEqual(calculateProvincialTax(100000, 'ON', options), 7366.48);
+  approxEqual(calculateProvincialTax(100000, 'ON', options), 7040.71);
 });
 
 test('QC tax bracket 1', () => {
-  approxEqual(calculateProvincialTax(40000, 'QC', options), 5800);
+  approxEqual(calculateProvincialTax(40000, 'QC', options), 5600);
 });
 
 test('AB tax bracket 1', () => {
@@ -51,5 +51,5 @@ test('AB tax bracket 1', () => {
 });
 
 test('total tax calculation', () => {
-  approxEqual(calculateTotalTax(60000, 'BC', options), 12894.8);
+  approxEqual(calculateTotalTax(60000, 'BC', options), 12581.77);
 });

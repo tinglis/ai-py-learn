@@ -15,16 +15,16 @@
     "ympe": 68500,
     "basicExemption": 3500,
     "employeeRate": 0.0595,
-    "maxContribution": 3754
+    "maxContribution": 3867.5
   },
   "ei": {
-    "maxInsurableEarnings": 61500,
-    "rate": 0.0163,
-    "maxContribution": 1002
+    "maxInsurableEarnings": 63200,
+    "rate": 0.0166,
+    "maxContribution": 1049.12
   },
   "credits": {
     "federal": {
-      "basicPersonalAmount": 15000,
+      "basicPersonalAmount": 15705,
       "disability": 9000
     },
     "provincial": {
@@ -33,7 +33,7 @@
         "disability": 8000
       },
       "ON": {
-        "basicPersonalAmount": 11986,
+        "basicPersonalAmount": 12399,
         "disability": 8300
       }
     }

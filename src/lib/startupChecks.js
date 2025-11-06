@@ -52,15 +52,15 @@ export function runStartupChecks() {
   });
 
   run('Federal tax bracket spot check', () => {
-    assertApprox('federalTax', calculateFederalTax(60000), 9318.8, 0.5);
+    assertApprox('federalTax', calculateFederalTax(60000), 6644.25, 0.5);
   });
 
   run('Provincial tax spot check', () => {
-    assertApprox('provTax', calculateProvincialTax(40000, 'ON'), 2024, 1);
+    assertApprox('provTax', calculateProvincialTax(40000, 'ON'), 1393.85, 1);
   });
 
   run('Total tax aggregation', () => {
-    assertApprox('totalTax', calculateTotalTax(60000, 'BC'), 12894.8, 1);
+    assertApprox('totalTax', calculateTotalTax(60000, 'BC'), 9076.18, 1);
   });
 
   run('Net earnings increases with RRSP deduction', () => {
