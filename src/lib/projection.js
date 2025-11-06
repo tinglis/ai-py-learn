@@ -328,7 +328,10 @@ export function runRetirementYear({
   lastYearIncomeForGIS,
 } = {}) {
   const remainingNeed = Math.max(0, spending - (cpp + oas));
-  const maxRrspForGIS = Math.max(0, gisThreshold - (cpp + oas));
+  // GIS clawbacks exclude OAS income, so only CPP (and other taxable income
+  // considered later in the withdrawal order) should reduce the amount of RRSP
+  // room we can safely use before hitting the threshold.
+  const maxRrspForGIS = Math.max(0, gisThreshold - cpp);
   const rrspWithdrawal = Math.min(remainingNeed, maxRrspForGIS, rrspBal);
   let residualNeed = Math.max(0, remainingNeed - rrspWithdrawal);
   const nonRegWithdrawal = Math.min(residualNeed, nonRegBal);

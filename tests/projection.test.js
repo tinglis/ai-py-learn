@@ -93,6 +93,18 @@ test('Retirement withdrawals respect GIS threshold', () => {
   assert.ok(plan.tfsaWithdrawal > 0);
 });
 
+test('OAS does not reduce GIS-safe RRSP withdrawals', () => {
+  const withOAS = runRetirementYear({
+    spending: 35000,
+    cpp: 8000,
+    oas: 8000,
+    gisThreshold: 20000,
+    tfsaBal: 100000,
+    rrspBal: 100000,
+  });
+  assert.equal(withOAS.rrspWithdrawal, 12000);
+});
+
 test('Retirement plan taps RDSP when other accounts depleted', () => {
   const plan = runRetirementYear({
     spending: 15000,
