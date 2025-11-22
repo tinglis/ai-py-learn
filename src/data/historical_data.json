@@ -1,0 +1,652 @@
+[
+  {
+    "year": 1900,
+    "return": 0.0558,
+    "inflation": -0.0175
+  },
+  {
+    "year": 1901,
+    "return": -0.09,
+    "inflation": 0.0023
+  },
+  {
+    "year": 1902,
+    "return": 0.0946,
+    "inflation": 0.0477
+  },
+  {
+    "year": 1903,
+    "return": 0.1569,
+    "inflation": -0.0113
+  },
+  {
+    "year": 1904,
+    "return": -0.0312,
+    "inflation": -0.017
+  },
+  {
+    "year": 1905,
+    "return": -0.1125,
+    "inflation": 0.0305
+  },
+  {
+    "year": 1906,
+    "return": -0.1894,
+    "inflation": -0.0001
+  },
+  {
+    "year": 1907,
+    "return": 0.06,
+    "inflation": 0.0345
+  },
+  {
+    "year": 1908,
+    "return": -0.1118,
+    "inflation": 0.0389
+  },
+  {
+    "year": 1909,
+    "return": 0.1238,
+    "inflation": -0.0194
+  },
+  {
+    "year": 1910,
+    "return": 0.1223,
+    "inflation": 0.0498
+  },
+  {
+    "year": 1911,
+    "return": -0.0639,
+    "inflation": -0.0045
+  },
+  {
+    "year": 1912,
+    "return": 0.1829,
+    "inflation": 0.0137
+  },
+  {
+    "year": 1913,
+    "return": -0.1629,
+    "inflation": -0.0103
+  },
+  {
+    "year": 1914,
+    "return": 0.139,
+    "inflation": 0.0404
+  },
+  {
+    "year": 1915,
+    "return": 0.1229,
+    "inflation": 0.053
+  },
+  {
+    "year": 1916,
+    "return": 0.0145,
+    "inflation": 0.0773
+  },
+  {
+    "year": 1917,
+    "return": -0.0486,
+    "inflation": 0.0352
+  },
+  {
+    "year": 1918,
+    "return": 0.1318,
+    "inflation": 0.0419
+  },
+  {
+    "year": 1919,
+    "return": 0.1447,
+    "inflation": 0.0377
+  },
+  {
+    "year": 1920,
+    "return": 0.0818,
+    "inflation": -0.0154
+  },
+  {
+    "year": 1921,
+    "return": -0.1088,
+    "inflation": 0.0089
+  },
+  {
+    "year": 1922,
+    "return": -0.1681,
+    "inflation": 0.0033
+  },
+  {
+    "year": 1923,
+    "return": -0.1596,
+    "inflation": 0.0078
+  },
+  {
+    "year": 1924,
+    "return": 0.0543,
+    "inflation": 0.0165
+  },
+  {
+    "year": 1925,
+    "return": -0.0519,
+    "inflation": 0.001
+  },
+  {
+    "year": 1926,
+    "return": -0.0932,
+    "inflation": 0.0737
+  },
+  {
+    "year": 1927,
+    "return": 0.0592,
+    "inflation": 0.0409
+  },
+  {
+    "year": 1928,
+    "return": -0.1315,
+    "inflation": 0.0529
+  },
+  {
+    "year": 1929,
+    "return": -0.1346,
+    "inflation": 0.0179
+  },
+  {
+    "year": 1930,
+    "return": 0.1958,
+    "inflation": 0.044
+  },
+  {
+    "year": 1931,
+    "return": 0.0228,
+    "inflation": 0.0485
+  },
+  {
+    "year": 1932,
+    "return": 0.1371,
+    "inflation": 0.0576
+  },
+  {
+    "year": 1933,
+    "return": -0.1084,
+    "inflation": -0.0168
+  },
+  {
+    "year": 1934,
+    "return": -0.0738,
+    "inflation": 0.0068
+  },
+  {
+    "year": 1935,
+    "return": -0.1156,
+    "inflation": 0.0743
+  },
+  {
+    "year": 1936,
+    "return": 0.1505,
+    "inflation": 0.0115
+  },
+  {
+    "year": 1937,
+    "return": 0.0622,
+    "inflation": 0.0196
+  },
+  {
+    "year": 1938,
+    "return": 0.1658,
+    "inflation": 0.0259
+  },
+  {
+    "year": 1939,
+    "return": -0.094,
+    "inflation": 0.0047
+  },
+  {
+    "year": 1940,
+    "return": 0.0245,
+    "inflation": 0.0063
+  },
+  {
+    "year": 1941,
+    "return": 0.0338,
+    "inflation": 0.0698
+  },
+  {
+    "year": 1942,
+    "return": -0.0402,
+    "inflation": 0.0019
+  },
+  {
+    "year": 1943,
+    "return": 0.199,
+    "inflation": 0.031
+  },
+  {
+    "year": 1944,
+    "return": -0.1636,
+    "inflation": -0.0153
+  },
+  {
+    "year": 1945,
+    "return": -0.1561,
+    "inflation": 0.0427
+  },
+  {
+    "year": 1946,
+    "return": 0.1168,
+    "inflation": 0.0222
+  },
+  {
+    "year": 1947,
+    "return": -0.1746,
+    "inflation": 0.0182
+  },
+  {
+    "year": 1948,
+    "return": 0.1984,
+    "inflation": 0.0329
+  },
+  {
+    "year": 1949,
+    "return": 0.1884,
+    "inflation": 0.0661
+  },
+  {
+    "year": 1950,
+    "return": -0.1954,
+    "inflation": 0.0521
+  },
+  {
+    "year": 1951,
+    "return": 0.0727,
+    "inflation": 0.0337
+  },
+  {
+    "year": 1952,
+    "return": -0.0933,
+    "inflation": 0.0441
+  },
+  {
+    "year": 1953,
+    "return": -0.1554,
+    "inflation": 0.0235
+  },
+  {
+    "year": 1954,
+    "return": -0.0185,
+    "inflation": 0.0754
+  },
+  {
+    "year": 1955,
+    "return": 0.1503,
+    "inflation": 0.0063
+  },
+  {
+    "year": 1956,
+    "return": 0.0002,
+    "inflation": -0.0021
+  },
+  {
+    "year": 1957,
+    "return": 0.1651,
+    "inflation": 0.0671
+  },
+  {
+    "year": 1958,
+    "return": -0.0806,
+    "inflation": 0.0439
+  },
+  {
+    "year": 1959,
+    "return": 0.0436,
+    "inflation": -0.0047
+  },
+  {
+    "year": 1960,
+    "return": 0.105,
+    "inflation": 0.0339
+  },
+  {
+    "year": 1961,
+    "return": 0.1115,
+    "inflation": 0.033
+  },
+  {
+    "year": 1962,
+    "return": -0.1998,
+    "inflation": 0.0124
+  },
+  {
+    "year": 1963,
+    "return": -0.1922,
+    "inflation": 0.0729
+  },
+  {
+    "year": 1964,
+    "return": 0.1515,
+    "inflation": 0.0632
+  },
+  {
+    "year": 1965,
+    "return": -0.077,
+    "inflation": -0.0142
+  },
+  {
+    "year": 1966,
+    "return": 0.1512,
+    "inflation": 0.0747
+  },
+  {
+    "year": 1967,
+    "return": -0.1657,
+    "inflation": 0.0286
+  },
+  {
+    "year": 1968,
+    "return": -0.1723,
+    "inflation": 0.0561
+  },
+  {
+    "year": 1969,
+    "return": 0.1063,
+    "inflation": -0.0072
+  },
+  {
+    "year": 1970,
+    "return": -0.0099,
+    "inflation": 0.035
+  },
+  {
+    "year": 1971,
+    "return": -0.094,
+    "inflation": 0.0672
+  },
+  {
+    "year": 1972,
+    "return": -0.0307,
+    "inflation": 0.0012
+  },
+  {
+    "year": 1973,
+    "return": 0.0157,
+    "inflation": 0.053
+  },
+  {
+    "year": 1974,
+    "return": -0.1195,
+    "inflation": 0.0112
+  },
+  {
+    "year": 1975,
+    "return": 0.1981,
+    "inflation": 0.045
+  },
+  {
+    "year": 1976,
+    "return": -0.0248,
+    "inflation": 0.0318
+  },
+  {
+    "year": 1977,
+    "return": -0.1516,
+    "inflation": 0.0025
+  },
+  {
+    "year": 1978,
+    "return": -0.0648,
+    "inflation": 0.0388
+  },
+  {
+    "year": 1979,
+    "return": -0.108,
+    "inflation": 0.002
+  },
+  {
+    "year": 1980,
+    "return": -0.1716,
+    "inflation": 0.0431
+  },
+  {
+    "year": 1981,
+    "return": -0.1084,
+    "inflation": 0.0705
+  },
+  {
+    "year": 1982,
+    "return": 0.1439,
+    "inflation": -0.0129
+  },
+  {
+    "year": 1983,
+    "return": -0.1048,
+    "inflation": 0.0469
+  },
+  {
+    "year": 1984,
+    "return": -0.1143,
+    "inflation": -0.0068
+  },
+  {
+    "year": 1985,
+    "return": 0.1742,
+    "inflation": 0.0371
+  },
+  {
+    "year": 1986,
+    "return": -0.0109,
+    "inflation": 0.0585
+  },
+  {
+    "year": 1987,
+    "return": 0.123,
+    "inflation": -0.001
+  },
+  {
+    "year": 1988,
+    "return": -0.1612,
+    "inflation": 0.0231
+  },
+  {
+    "year": 1989,
+    "return": -0.0306,
+    "inflation": 0.0267
+  },
+  {
+    "year": 1990,
+    "return": 0.0916,
+    "inflation": 0.0473
+  },
+  {
+    "year": 1991,
+    "return": 0.1937,
+    "inflation": -0.0102
+  },
+  {
+    "year": 1992,
+    "return": -0.039,
+    "inflation": 0.0139
+  },
+  {
+    "year": 1993,
+    "return": 0.1447,
+    "inflation": 0.0049
+  },
+  {
+    "year": 1994,
+    "return": -0.1239,
+    "inflation": 0.0249
+  },
+  {
+    "year": 1995,
+    "return": -0.0312,
+    "inflation": 0.0079
+  },
+  {
+    "year": 1996,
+    "return": -0.1001,
+    "inflation": 0.0723
+  },
+  {
+    "year": 1997,
+    "return": -0.0227,
+    "inflation": 0.0661
+  },
+  {
+    "year": 1998,
+    "return": 0.0201,
+    "inflation": -0.0149
+  },
+  {
+    "year": 1999,
+    "return": 0.1997,
+    "inflation": 0.0636
+  },
+  {
+    "year": 2000,
+    "return": 0.1876,
+    "inflation": 0.0726
+  },
+  {
+    "year": 2001,
+    "return": 0.1395,
+    "inflation": -0.0034
+  },
+  {
+    "year": 2002,
+    "return": -0.0057,
+    "inflation": 0.0014
+  },
+  {
+    "year": 2003,
+    "return": -0.0396,
+    "inflation": -0.0141
+  },
+  {
+    "year": 2004,
+    "return": -0.0484,
+    "inflation": 0.0785
+  },
+  {
+    "year": 2005,
+    "return": -0.0939,
+    "inflation": 0.0584
+  },
+  {
+    "year": 2006,
+    "return": -0.018,
+    "inflation": 0.0223
+  },
+  {
+    "year": 2007,
+    "return": 0.1829,
+    "inflation": 0.0795
+  },
+  {
+    "year": 2008,
+    "return": 0.0223,
+    "inflation": 0.0518
+  },
+  {
+    "year": 2009,
+    "return": -0.1381,
+    "inflation": 0.0097
+  },
+  {
+    "year": 2010,
+    "return": 0.1875,
+    "inflation": 0.0379
+  },
+  {
+    "year": 2011,
+    "return": 0.0169,
+    "inflation": 0.0548
+  },
+  {
+    "year": 2012,
+    "return": -0.1771,
+    "inflation": 0.0384
+  },
+  {
+    "year": 2013,
+    "return": 0.0011,
+    "inflation": 0.0653
+  },
+  {
+    "year": 2014,
+    "return": -0.137,
+    "inflation": 0.0761
+  },
+  {
+    "year": 2015,
+    "return": -0.168,
+    "inflation": -0.0014
+  },
+  {
+    "year": 2016,
+    "return": 0.038,
+    "inflation": 0.0475
+  },
+  {
+    "year": 2017,
+    "return": -0.1059,
+    "inflation": -0.008
+  },
+  {
+    "year": 2018,
+    "return": 0.1561,
+    "inflation": 0.0046
+  },
+  {
+    "year": 2019,
+    "return": 0.0378,
+    "inflation": 0.0419
+  },
+  {
+    "year": 2020,
+    "return": -0.0323,
+    "inflation": 0.0384
+  },
+  {
+    "year": 2021,
+    "return": 0.0091,
+    "inflation": 0.0735
+  },
+  {
+    "year": 2022,
+    "return": -0.1183,
+    "inflation": 0.0516
+  },
+  {
+    "year": 2023,
+    "return": -0.1045,
+    "inflation": 0.0196
+  },
+  {
+    "year": 2024,
+    "return": 0.0687,
+    "inflation": 0.01
+  },
+  {
+    "year": 2025,
+    "return": -0.0735,
+    "inflation": 0.0552
+  },
+  {
+    "year": 2026,
+    "return": -0.171,
+    "inflation": 0.0258
+  },
+  {
+    "year": 2027,
+    "return": 0.1994,
+    "inflation": 0.0796
+  },
+  {
+    "year": 2028,
+    "return": -0.1707,
+    "inflation": 0.0013
+  },
+  {
+    "year": 2029,
+    "return": -0.0939,
+    "inflation": 0.0733
+  }
+]

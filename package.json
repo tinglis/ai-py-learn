@@ -1,0 +1,27 @@
+{
+  "name": "maple-fire",
+  "version": "0.2.0",
+  "description": "Client-side Canadian FIRE planning calculator with interactive UI.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test"
+  },
+  "keywords": [
+    "fire",
+    "financial-independence",
+    "canada"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.9.0"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}
